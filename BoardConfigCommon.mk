@@ -177,3 +177,13 @@ WIFI_DRIVER_STATE_CTRL_PARAM := "/dev/wlan"
 WIFI_DRIVER_STATE_OFF := "OFF"
 WIFI_DRIVER_STATE_ON := "ON"
 PRODUCT_VENDOR_MOVE_ENABLED := true
+
+# ########################################################
+# BPF HACK (FOR ANDROID 16 ON 4.4 KERNEL)
+# ########################################################
+# This bypasses the eBPF requirement which the LG V30 
+# kernel (4.4) does not natively support.
+# ########################################################
+TARGET_USES_BPF_HACK := true
+BOARD_USES_BPF_HACK := true
+
